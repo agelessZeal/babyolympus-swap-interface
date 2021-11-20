@@ -37,7 +37,7 @@ function AppBar(): JSX.Element {
             <div className="px-4 py-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <Image src="/logo.png" alt="BabyOHM" width="32px" height="32px" />
+                  <Image src="/logo.png" alt="BabyOHM" width="80px" height="80px" />
                   <div className="hidden sm:block sm:ml-4">
                     <div className="flex space-x-2">
                       {/* <Buy /> */}
@@ -151,8 +151,8 @@ function AppBar(): JSX.Element {
                               }}
                             >
                               <Image
-                                src="/images/tokens/xsushi-square.jpg"
-                                alt="xSUSHI"
+                                src="/logo.png"
+                                alt="BabyOHM"
                                 width="38px"
                                 height="38px"
                                 objectFit="contain"
