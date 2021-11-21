@@ -80,6 +80,8 @@ export default function Swap() {
 
   const loadedUrlParams = useDefaultsFromURLSearch()
 
+  console.log('useDefaultsFromURLSearch', loadedUrlParams)
+
   // token warning stuff
   const [loadedInputCurrency, loadedOutputCurrency] = [
     useCurrency(loadedUrlParams?.inputCurrencyId),
@@ -138,6 +140,8 @@ export default function Swap() {
     allowedSlippage,
   } = useDerivedSwapInfo(doArcher)
 
+  console.log('loadedOutputCurrency', loadedUrlParams, urlLoadedTokens)
+
   const {
     wrapType,
     execute: onWrap,
@@ -189,7 +193,7 @@ export default function Swap() {
   // reset if they close warning without tokens in params
   const handleDismissTokenWarning = useCallback(() => {
     setDismissTokenWarning(true)
-    router.push('/swap/')
+    router.push('/')
   }, [router])
 
   // modal and loading

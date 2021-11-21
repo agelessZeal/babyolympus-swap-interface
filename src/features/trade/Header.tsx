@@ -41,7 +41,7 @@ const ExchangeHeader: FC<ExchangeHeaderProps> = ({ input, output, allowedSlippag
         <NavLink
           activeClassName="font-bold border rounded text-high-emphesis border-dark-800 bg-gradient-to-r from-opaque-blue to-opaque-pink hover:from-blue hover:to-pink"
           href={{
-            pathname: '/swap',
+            pathname: '/',
             query: getQuery(input, output),
           }}
         >

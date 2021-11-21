@@ -40,11 +40,22 @@ const nextConfig = {
   reactStrictMode: true,
   async redirects() {
     return [
-      {
-        source: '/',
-        destination: '/swap',
-        permanent: true,
-      },
+      // {
+      //   source: '/swap',
+      //   destination: '/',
+      //   permanent: true,
+      // },
+
+      // {
+      //   source: '/',
+      //   destination: '/exchange/swap',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/:token*',
+      //   destination: '/exchange/swap/:token*',
+      //   permanent: true,
+      // },
 
       {
         source: '/zap',
@@ -96,6 +107,14 @@ const nextConfig = {
       {
         source: '/create/:token*',
         destination: '/exchange/add/:token*',
+      },
+      {
+        source: '/',
+        destination: '/exchange/swap',
+      },
+      {
+        source: '/:token*',
+        destination: '/exchange/swap/:token*',
       },
       {
         source: '/swap',
