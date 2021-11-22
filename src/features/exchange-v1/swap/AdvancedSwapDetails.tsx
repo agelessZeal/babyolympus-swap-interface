@@ -76,9 +76,9 @@ export function AdvancedSwapDetails({ trade, allowedSlippage, minerBribe }: Adva
       <RowBetween>
         <RowFixed>
           <div className="text-sm text-secondary">{i18n._(t`Liquidity Provider Fee`)}</div>
-          <QuestionHelper
+          {/* <QuestionHelper
             text={i18n._(t`A portion of each trade (0.25%) goes to liquidity providers as a protocol incentive.`)}
-          />
+          /> */}
         </RowFixed>
         <div className="text-sm font-bold text-high-emphesis">
           {realizedLPFee

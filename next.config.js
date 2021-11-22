@@ -46,17 +46,6 @@ const nextConfig = {
       //   permanent: true,
       // },
 
-      // {
-      //   source: '/',
-      //   destination: '/exchange/swap',
-      //   permanent: true,
-      // },
-      // {
-      //   source: '/:token*',
-      //   destination: '/exchange/swap/:token*',
-      //   permanent: true,
-      // },
-
       {
         source: '/zap',
         destination: '/',

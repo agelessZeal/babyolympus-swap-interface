@@ -62,9 +62,9 @@ function TradeReview({
           <div className="flex items-center justify-between">
             <div className="text-lg text-secondary">
               Liquidity Provider Fee
-              <QuestionHelper
+              {/* <QuestionHelper
                 text={i18n._(t`A portion of each trade (0.25%) goes to liquidity providers as a protocol incentive.`)}
-              />
+              /> */}
             </div>
             <div className="text-lg">
               {realizedLPFee ? `${realizedLPFee.toSignificant(4)} ${trade.inputAmount.currency.symbol}` : '-'}
