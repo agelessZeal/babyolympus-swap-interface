@@ -78,7 +78,7 @@ export default function Me() {
         <div className="flex justify-between">
           <div className="flex">
             <div className="p-1.5 bg-dark-800 rounded">
-              <User strokeWidth={1} size={34} className="text-white" />
+              <User strokeWidth={1} size={34} className="text-black" />
             </div>
             <div className="ml-3">
               <div className="font-semibold text-gray-300">{account && shortenAddress(account)}</div>
@@ -98,11 +98,11 @@ export default function Me() {
 
           <div className="text-sm font-semibold text-primary">
             {/* <div className="flex items-center">
-                            <Copy strokeWidth={0.5} size={14} className="text-white"/>
+                            <Copy strokeWidth={0.5} size={14} className="text-black"/>
                             <div className="ml-1">Copy Address</div>
                         </div> */}
             <div className="flex items-center">
-              <ExternalLink strokeWidth={0.5} size={14} className="text-white" />
+              <ExternalLink strokeWidth={0.5} size={14} className="text-black" />
               {/* <div className="ml-1">View on Explorer</div> */}
               {chainId && account && (
                 <a href={getExplorerLink(chainId, account, 'address')}>

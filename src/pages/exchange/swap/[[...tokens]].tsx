@@ -507,7 +507,7 @@ export default function Swap() {
                 >
                   <div className="rounded-full bg-dark-900 p-3px">
                     <div
-                      className="p-3 rounded-full bg-dark-800 hover:bg-dark-700"
+                      className="p-3 rounded-full bg-blue hover:bg-pink-red"
                       onMouseEnter={() => setAnimateSwapArrows(true)}
                       onMouseLeave={() => setAnimateSwapArrows(false)}
                     >

@@ -30,7 +30,7 @@ const Component: FC<NetworkGuardProps> = ({ children, networks = [] }) => {
     <>
       <HeadlessUIModal isOpen={!!account && !networks.includes(chainId)} onDismiss={() => null}>
         <div className="flex flex-col justify-center gap-7">
-          <Typography variant="h1" className="max-w-2xl text-center text-white" weight={700}>
+          <Typography variant="h1" className="max-w-2xl text-center text-black" weight={700}>
             {i18n._(t`Roll it back - this feature is not yet supported on ${NETWORK_LABEL[chainId]}.`)}
           </Typography>
           <Typography className="text-center">
@@ -40,7 +40,7 @@ const Component: FC<NetworkGuardProps> = ({ children, networks = [] }) => {
               components={Fragment}
             />
           </Typography>
-          <Typography className="uppercase text-white text-center text-lg tracking-[.2rem]" weight={700}>
+          <Typography className="uppercase text-black text-center text-lg tracking-[.2rem]" weight={700}>
             {i18n._(t`Available Networks`)}
           </Typography>
           <div
@@ -51,7 +51,7 @@ const Component: FC<NetworkGuardProps> = ({ children, networks = [] }) => {
           >
             {networks.map((key: ChainId, idx: number) => (
               <button
-                className="flex flex-col items-center justify-start gap-2 text-primary hover:text-white"
+                className="flex flex-col items-center justify-start gap-2 text-primary hover:text-black"
                 key={idx}
                 onClick={() => {
                   const params = SUPPORTED_NETWORKS[key]

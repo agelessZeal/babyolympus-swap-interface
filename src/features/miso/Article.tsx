@@ -6,7 +6,7 @@ function Article({ title = '', content = '' }: { title?: any; content: any }) {
       <div className="flex">
         <div className="self-end mb-3 text-lg font-bold md:text-xl text-high-emphesis md:mb-7">{title}</div>
       </div>
-      <div className="pr-3 mb-2 text-sm leading-5 text-white opacity-50 md:text-base md:mb-4 md:pr-0">{content}</div>
+      <div className="pr-3 mb-2 text-sm leading-5 text-black opacity-50 md:text-base md:mb-4 md:pr-0">{content}</div>
     </div>
   )
 }

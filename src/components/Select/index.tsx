@@ -41,7 +41,7 @@ export const NeonSelectItem: FC<NeonSelectItemProps> = ({ onClick, value, childr
   return (
     <div
       onClick={(e) => onClick(e, value)}
-      className="text-primary flex w-full cursor-pointer hover:text-white px-3 py-1.5 text-md"
+      className="text-primary flex w-full cursor-pointer hover:text-black px-3 py-1.5 text-md"
     >
       {children}
     </div>

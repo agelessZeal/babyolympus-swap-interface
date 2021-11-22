@@ -54,12 +54,12 @@ const ConfirmLimitOrderTopContent = () => {
     <div className="py-8">
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-3">
-          <div className="text-xl font-bold text-white">{i18n._(t`You Pay:`)}</div>
+          <div className="text-xl font-bold text-black">{i18n._(t`You Pay:`)}</div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <CurrencyLogo size={40} currency={currencies[Field.INPUT]} />
-              <div className="text-xl font-bold text-white">{parsedAmounts[Field.INPUT]?.toSignificant(6)}</div>
-              <div className="text-xl text-white">{currencies[Field.INPUT]?.symbol}</div>
+              <div className="text-xl font-bold text-black">{parsedAmounts[Field.INPUT]?.toSignificant(6)}</div>
+              <div className="text-xl text-black">{currencies[Field.INPUT]?.symbol}</div>
             </div>
             <div className="text-sm text-low-emphesis">≈ {inputValueUSDC} USDC</div>
           </div>
@@ -71,12 +71,12 @@ const ConfirmLimitOrderTopContent = () => {
           </span>
         </div>
         <div className="flex flex-col gap-3">
-          <div className="flex gap-2 text-xl font-bold text-white">{i18n._(t`You receive`)}</div>
+          <div className="flex gap-2 text-xl font-bold text-black">{i18n._(t`You receive`)}</div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <CurrencyLogo size={40} currency={currencies[Field.OUTPUT]} />
-              <div className="text-xl font-bold text-white">{parsedAmounts[Field.OUTPUT]?.toSignificant(6)}</div>
-              <div className="text-xl text-white">{currencies[Field.OUTPUT]?.symbol}</div>
+              <div className="text-xl font-bold text-black">{parsedAmounts[Field.OUTPUT]?.toSignificant(6)}</div>
+              <div className="text-xl text-black">{currencies[Field.OUTPUT]?.symbol}</div>
             </div>
             <div className="text-sm text-low-emphesis">≈ {outputValueUSDC} USDC</div>
           </div>

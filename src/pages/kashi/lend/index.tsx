@@ -115,12 +115,12 @@ function Lend() {
                                 <div>
                                   <strong>{pair.asset.tokenInfo.symbol}</strong> / {pair.collateral.tokenInfo.symbol}
                                 </div>
-                                <div className="block mt-0 text-xs text-left text-white-500 lg:hidden">
+                                <div className="block mt-0 text-xs text-left text-black-500 lg:hidden">
                                   {pair.oracle.name}
                                 </div>
                               </div>
                             </div>
-                            <div className="hidden text-white md:block">
+                            <div className="hidden text-black md:block">
                               <strong>{pair.asset.tokenInfo.symbol}</strong>
                             </div>
                             <div className="hidden md:block">{pair.collateral.tokenInfo.symbol}</div>
@@ -221,7 +221,7 @@ function Lend() {
                                 <div className="font-semibold">{pair.asset.tokenInfo.symbol} / </div>
                                 <div>{pair.collateral.tokenInfo.symbol}</div>
                               </div>
-                              <div className="block mt-0 text-xs text-left text-white-500 lg:hidden">
+                              <div className="block mt-0 text-xs text-left text-black-500 lg:hidden">
                                 {pair.oracle.name}
                               </div>
                             </div>

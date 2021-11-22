@@ -103,12 +103,12 @@ const ListRow = memo(({ listUrl }: { listUrl: string }) => {
       )}
       <div className="justify-center flex-auto ml-4">
         <div>
-          <div className={classNames(isActive && 'text-white', 'overflow-hidden overflow-ellipsis font-semibold')}>
+          <div className={classNames(isActive && 'text-black', 'overflow-hidden overflow-ellipsis font-semibold')}>
             {list.name}
           </div>
         </div>
         <div className="relative flex flex-row">
-          <div className={classNames(isActive && 'text-white', 'text-xs')}>{list.tokens.length} tokens</div>
+          <div className={classNames(isActive && 'text-black', 'text-xs')}>{list.tokens.length} tokens</div>
           <Popover className="flex items-center justify-center">
             <Popover.Button ref={setReferenceElement as any}>
               <Settings size={12} className="ml-1 stroke-current" />

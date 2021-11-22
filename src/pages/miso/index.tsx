@@ -53,8 +53,8 @@ function MISO() {
                       <div className="flex flex-row">
                         <div className="flex-1" style={{ height: 2, backgroundColor: '#888' }}></div>
                         <div className="flex flex-row" style={{ marginTop: '-12px' }}>
-                          <div className="ml-1 text-sm text-white">Artist</div>
-                          <div className="ml-1 text-sm font-bold text-white"> Chew Stoll</div>
+                          <div className="ml-1 text-sm text-black">Artist</div>
+                          <div className="ml-1 text-sm font-bold text-black"> Chew Stoll</div>
                           <div className="ml-1" style={{ width: 12, height: 10 }}>
                             <a href="https://twitter.com/chowzuh" target="_blank" rel="noreferrer noopener">
                               <Image src="/images/miso/trident/trident_twitter.svg" width={12} height={10} />
